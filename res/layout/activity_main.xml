@@ -8,17 +8,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.excercise1.MainActivity" >
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    
 
     <EditText
-        android:id="@+id/ed"
+        android:id="@+id/editT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv1"
+       
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:ems="10" />
@@ -27,7 +23,7 @@
         android:id="@+id/bt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ed"
+        android:layout_below="@+id/editT"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:text="Click" />

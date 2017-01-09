@@ -20,21 +20,20 @@ public class MainActivity extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       
+        ed1=(EditText)findViewById(R.id.editT);
         b=(Button) findViewById(R.id.bt);
-        ed1=(EditText)findViewById(R.id.ed);
-        
-b.setOnClickListener(new View.OnClickListener() {
+        b.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				String data=ed1.getText().toString();
 				
-				
 				Intent i=new Intent(MainActivity.this,SecondActivity.class);
 				i.putExtra("username", data);
 				startActivity(i);
         
-				startActivity(i);
+			
 			}
 		});
         

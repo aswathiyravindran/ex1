@@ -21,14 +21,19 @@ public class SecondActivity extends Activity{
 		
 		 Typeface custom_font=Typeface.createFromAsset(getAssets(), "AlexBrush-Regular.ttf");
 		 Typeface custom_font1=Typeface.createFromAsset(getAssets(), "Amatic-Bold.ttf");
-		 Typeface custom_font2=Typeface.createFromAsset(getAssets(), "BEBAS__.ttf");
+		 Typeface custom_font2=Typeface.createFromAsset(getAssets(), "cac_champagne.ttf");
 		Intent i=getIntent();
+		
 		String data_main= i.getStringExtra("username");
+		
 		result1.setTypeface(custom_font);
+		result1.setTypeface(null,Typeface.BOLD_ITALIC);
 		result1.setText("Hello"+data_main);
 		result2.setTypeface(custom_font1);
+		
 		result2.setText("How are you"+data_main);
 		result3.setTypeface(custom_font2);
+		
 		result3.setText("Wish u good day "+data_main);
 	}
 }
